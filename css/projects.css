@@ -1,11 +1,9 @@
 #projects {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    padding: 30px 140px 50px;
+    padding: 50px 140px 50px;
     align-items: center;
     justify-content: space-around;
-    gap: 80px;
 }
 
 .project-title {
@@ -13,6 +11,7 @@
     text-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    padding-top: 80px;
     scroll-snap-align: start;
 }
 
@@ -28,8 +27,8 @@
 
 .project-content {
     display: flex;
-    width: 1130px;
-    gap: 130px;
+    width: 978px;
+    gap: 50px;
     overflow-y: hidden;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -51,7 +50,7 @@
 
 .project-content video {
     scroll-snap-align: start;
-    width: fit-content;
+    height: 550px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -68,22 +67,20 @@
 }
 
 @media (max-width: 1315px){
-    #projects{
-        margin-top: 10px;
-    }
 
     .project-content {
-        width: 1000px;
+        width: 888px;
     }
 
     .project video{
-        height: 565px;
+        height: 500px;
     }
 }
 
 @media (max-width: 1150px){
+
     #projects{
-        gap: 30px;
+        margin-top: -50px;
     }
 
     .project-content {
@@ -96,9 +93,6 @@
 }
 
 @media (max-width: 979px){
-    #projects{
-        padding-bottom: 20px;
-    }
 
     .project-content {
         width: 600px;

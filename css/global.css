@@ -45,7 +45,19 @@ body{
 
 header {
   display: flex;
+  position: fixed;
+  align-items: center;
   justify-content: center;
+  top: 0;
+  z-index: 9999;
+  margin-left: -50px;
+  width: 100vw;
+  height: 8vh;
+  transition: 1s;
+}
+
+.scrolled{
+    background-color: rgba(13,10,20,1);
 }
 
 ul, li, a{
@@ -81,10 +93,21 @@ p{
   body{
     overflow-x: hidden;
   }
+
+  html::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 @media (max-width: 480px){
   body{
     padding: 0 30px
+  }
+
+  header{
+    width: 120vw;
+    height: 7.5vh;
+    align-items: end;
+    padding: 10px;
   }
 }

@@ -2,11 +2,11 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
     scroll-snap-type: y mandatory;
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 #about h2 {
@@ -74,7 +74,6 @@
     background-size: contain;
     width: 25px;
     height: 25px;
-    margin-right: 5px;
 }
 
 #location-experience p:nth-child(2)::before{

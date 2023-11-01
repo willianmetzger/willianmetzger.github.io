@@ -1,10 +1,10 @@
 #navbar{
     display: flex;
-    padding-top: 50px;
+    padding-top: 30px;
     justify-content: space-between;
-    scroll-snap-align: start;
     scroll-snap-type: y mandatory;
-    width: 80%;
+    width: 70%;
+    scroll-snap-align: start;
 }
 
 .nav-menu {
@@ -106,6 +106,7 @@
     opacity: 0;
     list-style-type: none;
     transition: all 0.1s;
+    background-color: rgba(13,10,20,1);
 }
 
 .language ul li a{
@@ -155,7 +156,7 @@ a.en::before{
     vertical-align: -15%;
 }
 
-@media (max-width: 979px){
+@media (max-width: 1350px){
     .nav-item a{
         font-size: 1.25rem;
     }
@@ -173,9 +174,10 @@ a.en::before{
 @media(max-width: 768px) {
 
     #navbar{
-        padding-top: 30px;
+        padding-top: 0px;
         justify-content: left;
         scroll-snap-align: none;
+        margin-left: -50px;
     }
 
     .hamburger {
@@ -199,12 +201,11 @@ a.en::before{
         left: -100%;
         z-index: 999;
         gap: 30px;
-        padding-top: 48px;
-        padding-left: 50px;
+        padding-top: 50px;
         flex-direction: column;
         background-color: #040208;
         justify-content: initial;
-        width: 65vw;
+        width: 85vw;
         height: 200vh;
         text-align: center;
         transition: 0.3s;
@@ -235,7 +236,7 @@ a.en::before{
 
     .contacts-icon.active{
         left: 0;
-        width: 65vw;
+        width: 85vw;
     }
 
     .nav-item a{
@@ -254,10 +255,18 @@ a.en::before{
 
     .language ul{
         display: flex;
+        background-color: #040208;
+        z-index: -1;
     }
 
     .language ul li a{
         margin-top: 35px;
         margin-left: 21px;
+    }
+}
+
+@media (max-width: 480px){
+    #navbar{
+        padding-top: 0;
     }
 }

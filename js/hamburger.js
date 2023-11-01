@@ -13,3 +13,10 @@ document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click",
     navMenu.classList.remove("active");
     contact.classList.remove("active");
 }))
+
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("header");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
