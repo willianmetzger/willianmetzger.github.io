@@ -67,36 +67,36 @@ $(function () {
         //Professional Projects
         //Project 1
         $('#projects h4:eq(0)').text('Professional project 1');
-        $('#projects p:eq(1)').text('Professional project text 1');
+        $('#projects p:eq(0)').text('Professional project text 1');
 
         //Project 2
         $('#projects h4:eq(1)').text('Professional project 2');
-        $('#projects p:eq(2)').text('Professional project text 2');
+        $('#projects p:eq(1)').text('Professional project text 2');
 
         //Project 3
         $('#projects h4:eq(2)').text('Professional project 3');
-        $('#projects p:eq(3)').text('Professional project text 3');
+        $('#projects p:eq(2)').text('Professional project text 3');
 
         //Project 4
         $('#projects h4:eq(3)').text('Professional project 4');
-        $('#projects p:eq(4)').text('Professional project text 4');
+        $('#projects p:eq(3)').text('Professional project text 4');
 
         //Personal Projects
         //Project 1
         $('#projects h4:eq(4)').text('Personal project 1');
-        $('#projects p:eq(6)').text('Personal project text 1');
+        $('#projects p:eq(4)').text('Personal project text 1');
 
         //Project 2
         $('#projects h4:eq(5)').text('Personal project 2');
-        $('#projects p:eq(7)').text('Personal project text 2');
+        $('#projects p:eq(5)').text('Personal project text 2');
 
         //Project 3
         $('#projects h4:eq(6)').text('Personal project 3');
-        $('#projects p:eq(8)').text('Personal project text 3');
+        $('#projects p:eq(6)').text('Personal project text 3');
 
         //Project 4
         $('#projects h4:eq(7)').text('Personal project 4');
-        $('#projects p:eq(9)').text('Personal project text 4');
+        $('#projects p:eq(7)').text('Personal project text 4');
 
         //About
         $('#about-title h2').text('About me');
@@ -169,36 +169,36 @@ $(function () {
         //Professional Projects
         //Project 1
         $('#projects h4:eq(0)').text('Projeto profissional 1');
-        $('#projects p:eq(1)').text('Texto projeto profissional 1');
+        $('#projects p:eq(0)').text('Texto projeto profissional 1');
 
         //Project 2
         $('#projects h4:eq(1)').text('Projeto profissional 2');
-        $('#projects p:eq(2)').text('Texto projeto profissional 2');
+        $('#projects p:eq(1)').text('Texto projeto profissional 2');
 
         //Project 3
         $('#projects h4:eq(2)').text('Projeto profissional 3');
-        $('#projects p:eq(3)').text('Texto projeto profissional 3');
+        $('#projects p:eq(2)').text('Texto projeto profissional 3');
 
         //Project 4
         $('#projects h4:eq(3)').text('Projeto profissional 4');
-        $('#projects p:eq(4)').text('Texto projeto profissional 4');
+        $('#projects p:eq(3)').text('Texto projeto profissional 4');
 
         //Personal Projects
         //Project 1
         $('#projects h4:eq(4)').text('Projeto pessoal 1');
-        $('#projects p:eq(6)').text('Texto projeto pessoal 1');
+        $('#projects p:eq(4)').text('Texto projeto pessoal 1');
 
         //Project 2
         $('#projects h4:eq(5)').text('Projeto pessoal 2');
-        $('#projects p:eq(7)').text('Texto projeto pessoal 2');
+        $('#projects p:eq(5)').text('Texto projeto pessoal 2');
 
         //Project 3
         $('#projects h4:eq(6)').text('Projeto pessoal 3');
-        $('#projects p:eq(8)').text('Texto projeto pessoal 3');
+        $('#projects p:eq(6)').text('Texto projeto pessoal 3');
 
         //Project 4
         $('#projects h4:eq(7)').text('Projeto pessoal 4');
-        $('#projects p:eq(9)').text('Texto projeto pessoal 4');
+        $('#projects p:eq(7)').text('Texto projeto pessoal 4');
 
         //About
         $('#about-title h2').text('Sobre mim');
