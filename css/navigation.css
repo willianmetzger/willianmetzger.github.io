@@ -1,0 +1,263 @@
+#navbar{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    width: 80%;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.nav-item a{
+    font-size: 1.563rem;
+    font-weight: 500;
+}
+
+.nav-item a:hover{
+    color: var(--color-purple);
+}
+
+.contacts-icon{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    gap: 10px;
+    justify-content: space-between;
+    padding-top: 3px;
+    align-items: center;
+}
+
+.contacts-icon a:hover{
+    filter: invert(46%) sepia(85%) saturate(3722%) hue-rotate(235deg) brightness(98%) contrast(93%);
+}
+
+#navbar .contacts-icon img{
+    height: 25px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-link {
+    font-size: 1.563rem;
+    font-weight: 400;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.language img{
+    width: 30px;
+}
+
+.language-selected{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-selected::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.language-selected.change-br::after{
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+}
+
+.language-selected.change-en::after{
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+}
+
+.language ul {
+    position: absolute;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-left: -21px;
+    margin-top: -73px;
+    opacity: 0;
+    list-style-type: none;
+    transition: all 0.1s;
+}
+
+.language ul li a{
+    display: block;
+    font-size: 1.563rem;
+}
+
+.language:hover ul{
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.language ul.show-list {
+    margin-top: 0px;
+    opacity: 1;
+}
+
+a.br:hover{
+    color: var(--color-purple);
+}
+
+a.en:hover{
+    color: var(--color-purple);
+}
+
+a.br::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: -15%;
+}
+
+a.en::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: -15%;
+}
+
+@media (max-width: 979px){
+    .nav-item a{
+        font-size: 1.25rem;
+    }
+
+    .language-selected img{
+        height: 25px;
+        width: 25px;
+    }
+
+    #navbar .contacts-icon img{
+        height: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    #navbar{
+        padding-top: 30px;
+        justify-content: left;
+        scroll-snap-align: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        z-index: 999;
+        gap: 30px;
+        padding-top: 48px;
+        padding-left: 50px;
+        flex-direction: column;
+        background-color: #040208;
+        justify-content: initial;
+        width: 65vw;
+        height: 200vh;
+        text-align: center;
+        transition: 0.3s;
+        margin-top: -50px;
+
+    }
+
+    .contacts-icon{
+        position: fixed;
+        left: -100%;
+        padding: 20px;
+        justify-content: center;
+        gap: 40px;
+        bottom: 0;
+        z-index: 9999;
+        border-top: solid 1px;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+
+    #navbar .contacts-icon img{
+        height: 25px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .contacts-icon.active{
+        left: 0;
+        width: 65vw;
+    }
+
+    .nav-item a{
+        font-size: 1.5rem;
+    }
+
+    .contacts-icon{
+        width: 40%;
+    }
+
+    .language{
+        display: flex;
+        justify-content: center;
+        margin-left: -15px;
+    }
+
+    .language ul{
+        display: flex;
+    }
+
+    .language ul li a{
+        margin-top: 35px;
+        margin-left: 21px;
+    }
+}

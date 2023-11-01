@@ -1,0 +1,282 @@
+#content {
+    height: 100%;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(64, 48, 103, 0.2) 0%, rgba(31, 23, 50, 0.2) 100%);
+    border: solid 1px rgba(7, 6, 12, 0.2);
+    border-radius: 25px;
+}
+
+#content h3 {
+    color: var(--color-purple);
+    font-size: 3.125rem;
+}
+
+#skills p {
+    padding-top: 20px;
+}
+
+#skill-icons-container {
+    width: 100%;
+    padding: 20px 20px;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+}
+
+#skill-icons-container ul {
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 30px 2fr;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.skill-icons img {
+    height: 70px;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tools ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 950px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 40px;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    width: 950px;
+}
+
+#skills p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#skills li {
+    margin-left: 36px;
+    font-size: 1.875rem;
+    color: var(--color-white);
+    filter: drop-shadow(4px 4px 4px #000000);
+}
+
+#core::before{
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/brain.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+#code::before{
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/code.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+#illumination::before{
+    content: '';
+    display: inline-block;
+    background-image: url(/assets/lamp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+#skills h3 {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+
+
+@media (max-width: 1315px) {
+    .skill-icons img {
+        height: 60px;
+    }
+
+    #content h3 {
+        font-size: 2.188rem;
+    }
+
+    #content p {
+        font-size: 1.563rem;
+    }
+
+    #skills li {
+        font-size: 1.563rem;
+        margin-left: 10px;
+    }
+
+    #skills p {
+        margin-left: -20px;
+    }
+
+    #skills{
+        width: 770px;
+    }
+
+    #core::before, #code::before, #illumination::before{
+        height: 25px;
+        width: 25px;
+    }
+
+    #tools ul {
+        width: 800px;
+    }
+}
+
+@media (max-width: 979px) {
+    .skill-icons img {
+        height: 50px;
+    }
+
+    #content h3 {
+        font-size: 1.563rem;
+    }
+
+    #content p {
+        font-size: 1.25rem;
+    }
+
+    #skills li {
+        font-size: 1.25rem;
+        margin-left: 30px;
+    }
+
+    #skills p {
+        margin-left: 4px;
+    }
+
+    #core::before, #code::before, #illumination::before{
+        width: 20px;
+        height: 20px;
+    }
+
+    #skills{
+        width: 615px;
+    }
+
+    #tools ul {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    #content{
+        scroll-snap-align: none;
+    }
+
+    .skill-icons img {
+        height: 40px;
+    }
+
+    #content h3 {
+        font-size: 1.25rem;
+    }
+
+    #content p {
+        font-size: 0.938rem;
+    }
+
+    #skills li {
+        font-size: 0.938rem;
+        margin-left: -2px;
+    }
+
+    #skills p {
+        margin-left: -23px;
+    }
+
+    #core::before, #code::before, #illumination::before{
+        width: 15px;
+        height: 15px;
+    }
+
+    #skills{
+        width: 430px;
+    }
+
+    #tools ul {
+        width: 470px;
+    }
+}
+
+@media (max-width: 650px) {
+    #tools ul {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #skills ul {
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    #skills{
+        width: 320px;
+    }
+}
+
+@media (max-width: 579px) {
+    .skill-icons img {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .skill-icons img {
+        height: 25px;
+    }
+
+    #content p {
+        font-size: 0.8rem;
+    }
+
+    #tools ul{
+        width: 250px;
+    }
+
+    #skills{
+        width: 270px;
+    }
+
+    #skills li {
+        font-size: 0.8rem;
+    }
+
+    #skills p {
+        margin-left: -22px;
+    }
+
+    #core::before, #code::before, #illumination::before{
+        width: 15px;
+        height: 15px;
+    }
+}
