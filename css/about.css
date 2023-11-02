@@ -116,8 +116,8 @@ footer img {
     transition: 0.3s;
 }
 
-footer img:hover {
-    transform: scale(1.1);
+footer a:hover{
+    filter: invert(46%) sepia(85%) saturate(3722%) hue-rotate(235deg) brightness(98%) contrast(93%);
 }
 
 @media (max-width: 1150px) {
@@ -298,6 +298,10 @@ footer img:hover {
 
     #about img:nth-child(2) {
         height: 220px;
+    }
+
+    #location-experience p{
+        font-size: 0.5rem;
     }
 
     footer{
