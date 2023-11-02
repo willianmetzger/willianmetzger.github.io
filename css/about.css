@@ -7,6 +7,7 @@
     flex-direction: row;
     overflow: hidden;
     scroll-snap-align: start;
+    padding: 0 20px;
 }
 
 #about h2 {
@@ -151,7 +152,7 @@ footer a:hover{
     }
 }
 
-@media (max-width: 830px){
+@media (max-width: 860px){
     #about-title h2 {
         font-size: 2.5rem;
     }
@@ -185,7 +186,7 @@ footer a:hover{
     }
 
     #about-title h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     #about-title p {
@@ -201,7 +202,7 @@ footer a:hover{
     }
 
     #about img:nth-child(2) {
-        height: 350px;
+        height: 320px;
     }
 
     #location-experience p{
@@ -228,9 +229,9 @@ footer a:hover{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 620px){
     #about-title h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     #about-title p {
@@ -248,7 +249,7 @@ footer a:hover{
     }
 
     #about img:nth-child(2) {
-        height: 300px;
+        height: 250px;
     }
 
     #location-experience p{
@@ -279,7 +280,7 @@ footer a:hover{
     }
 
     #about img:nth-child(2) {
-        height: 250px;
+        height: 200px;
     }
 
     #location-experience p{
@@ -317,12 +318,5 @@ footer a:hover{
 
     footer img {
         width: 15px;
-    }
-}
-
-@media (max-width: 390px){
-
-    #about img:nth-child(2) {
-        height: 200px;
     }
 }
