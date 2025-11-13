@@ -103,7 +103,7 @@ $(function () {
         $('#about-title h2').text('About me');
         $('#about-title p').html('<p><a href="/cv/Willian Metzger - CV en.pdf">Resume</a></p>');
         $('#location-experience p:eq(0)').text('Brazil');
-        $('#location-experience p:eq(1)').text('4 yrs of experience');
+        $('#location-experience p:eq(1)').text('5 yrs of experience');
 
         //Footer
         $('footer h4').text('Tell me about your next project!');
@@ -205,7 +205,7 @@ $(function () {
         $('#about-title h2').text('Sobre mim');
         $('#about-title p').html('<p><a href="/cv/Willian Metzger - CV pt-BR.pdf">CV</a></p>');
         $('#location-experience p:eq(0)').text('Brasil');
-        $('#location-experience p:eq(1)').text('4 anos de exp.');
+        $('#location-experience p:eq(1)').text('5 anos de exp.');
 
         //Footer
         $('footer h4').text('Conte-me sobre o seu próximo projeto!');
